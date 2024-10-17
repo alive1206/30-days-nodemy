@@ -12,11 +12,20 @@ function updateImageByIndex(index) {
   });
 
   currentIndex = index;
-  imgFeature.style.opacity = "0";
+
+  //opacity
+  //   imgFeature.style.opacity = "0";
+  //   setTimeout(() => {
+  //     imgFeature.src = listImg[index].getAttribute("src");
+  //     imgFeature.style.opacity = "1";
+  //   }, 200);
+
+  //animation
+  imgFeature.style.animation = "";
   setTimeout(() => {
     imgFeature.src = listImg[index].getAttribute("src");
-    imgFeature.style.opacity = "1";
-  }, 200);
+    imgFeature.style.animation = "fade .5s ease-in-out forwards";
+  }, 100);
   listImg[index].parentElement.classList.add("active");
 
   //hide button if out of album

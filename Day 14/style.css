@@ -23,7 +23,7 @@ body {
 }
 
 .img-feature {
-  transition: 0.1s ease-in-out;
+  /* transition: 0.1s ease-in-out; */
 }
 
 .list-image {
@@ -79,4 +79,13 @@ img {
 
 .hide {
   display: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
