@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 19 - Paint Tool</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tool">
+      <input type="color" title="Chọn màu" id="color" />
+      <button title="Xóa" id="eraser">
+        <i class="fa-solid fa-eraser"></i>
+      </button>
+      <button title="Giảm nét bút" id="decrease">-</button>
+      <div id="size">20</div>
+      <button title="Tăng nét bút" id="increase">+</button>
+      <a title="Lưu" class="save" id="save" download="image.png">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </a>
+      <button title="Clear" id="clear">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+    </div>
+    <div class="container">
+      <canvas id="canvas" width="1200" height="600"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
