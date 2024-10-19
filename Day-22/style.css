@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #0f9d58;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+button {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 10px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.25s;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 5px;
+}
+
+button:hover,
+.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.food-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.food-item {
+  width: 20%;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s;
+}
+
+.food-item:hover img {
+  transform: scale(2) rotate(45deg);
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #e2f3e2;
+  margin: 100px auto;
+  margin-bottom: auto;
+  width: 1200px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
