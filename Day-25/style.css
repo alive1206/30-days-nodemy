@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.player {
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.player:hover .control {
+  transform: unset;
+  transition: all 0.5s ease-in-out;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 5px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+  transform: translateY(200%);
+}
+
+.control > * {
+  margin: 0 2px;
+}
+
+.control .progress {
+  background: white;
+  height: 5px;
+  position: relative;
+  flex: 1;
+}
+
+.control .progress-filled {
+  background: red;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
